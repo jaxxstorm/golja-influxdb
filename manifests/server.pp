@@ -79,6 +79,7 @@ class influxdb::server (
   $influxdb_stdout_log                          = $influxdb::params::influxdb_stdout_log,
   $influxd_opts                                 = $influxdb::params::influxd_opts,
   $manage_install                               = $influxdb::params::manage_install,
+  $manage_repo                                  = $influxdb::params::manage_repo,
 ) inherits influxdb::params {
 
   anchor { 'influxdb::server::start': }->

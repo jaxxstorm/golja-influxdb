@@ -78,6 +78,7 @@ class influxdb::params {
   $influxdb_stdout_log                          = '/dev/null'
   $influxd_opts                                 = undef
   $manage_install                               = true
+  $manage_repo                                  = true
 
   case $::osfamily {
     'Debian': {
